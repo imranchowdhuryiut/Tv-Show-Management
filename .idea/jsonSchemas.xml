@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JsonSchemaMappingsProjectConfiguration">
+    <state>
+      <map>
+        <entry key="Events Test Scheme">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="Events Test Scheme" />
+              <option name="relativePathToSchema" value="$APPLICATION_HOME_DIR$/lib/platform-statistics-devkit.jar!/schemas/events-test-scheme.schema.json" />
+              <option name="applicationDefined" value="true" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="app/src/main/graphql/com/imran/tvshowmanager/tvshowserver/instrospectionSchema.json" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="instrospectionSchema">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="instrospectionSchema" />
+              <option name="relativePathToSchema" value="app/src/main/graphql/com/imran/tvshowmanager/tvshowserver/schema.json" />
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="schema">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="schema" />
+              <option name="relativePathToSchema" value="app/src/main/graphql/com/imran/tvshowmanager/tvshowserver/schema.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="app/src/main/graphql/com/imran/tvshowmanager/tvshowserver/schema.json" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+      </map>
+    </state>
+  </component>
+</project>

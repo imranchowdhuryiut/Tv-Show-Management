@@ -1,0 +1,17 @@
+query MovieList ($input: String){
+    movies (after: $input) {
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+        edges {
+            node {
+                id
+                title
+                releaseDate
+                seasons
+            }
+            cursor
+        }
+    }
+}

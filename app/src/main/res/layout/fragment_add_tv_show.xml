@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.AddTvShowFragment">
+
+    <include
+        android:id="@+id/layoutCustomToolbar"
+        layout="@layout/layout_toolbar"/>
+
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        android:layout_width="@dimen/_50dp"
+        android:layout_height="@dimen/_50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_below="@+id/layoutCustomToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppDefaultInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4dp"
+            android:hint="@string/tv_show">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tvShowName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppDefaultInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4dp"
+            android:hint="@string/release_date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tvReleaseDate"
+                android:inputType="date"
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/AppDefaultInputLayoutStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_4dp"
+            android:hint="@string/seasons">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tvSeasons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="number"
+                android:gravity="top"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAddTvShow"
+            android:layout_marginTop="@dimen/_32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/save_tv_show"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
